@@ -19,15 +19,15 @@ console.log("Current Time: " + currentTime);
 $("#submit").on("click", function() {
 
 
-	var name = $('#nameInput').val().trim();
+    var name = $('#nameInput').val().trim();
     var dest = $('#destInput').val().trim();
     var time = $('#timeInput').val().trim();
     var freq = $('#freqInput').val().trim();
 
 
 	database.ref().push({
-		name: name,
-		dest: dest,
+	name: name,
+	dest: dest,
     	time: time,
     	freq: freq,
     	timeAdded: firebase.database.ServerValue.TIMESTAMP
